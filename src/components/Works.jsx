@@ -1,6 +1,6 @@
 import React from "react";
 import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -41,6 +41,20 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             {/* when the website is uploaded create another link for direct website access */}
             </div>
           </div>
+        </div>
+
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <p className="mt-2 text-secondary tex-[14px]">{description}</p>
+        </div>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <p key={tag.name} className={`text-[14px] ${tag.color} `}>
+              #{tag.name}
+            </p>
+          ))}
+                
         </div>
       </Tilt>
     </motion.div>
