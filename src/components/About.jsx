@@ -44,7 +44,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Hello there! I'm a diploma student studying Computer Science at
+        Hello there! I'm an Indian diploma student studying Computer Science at
         Vidyalankar Polytechnic in Mumbai. My current journey revolves around
         the world of full stack development, with a particular focus on
         frontend. I'm a beginner in frontend development, but I've already
